@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Button } from '../../components/Button'
 import { Input } from '../../components/Input'
-import { useSign } from '../../hook/context'
 import { api } from '../../service/api'
 import { ContainerSign } from './styled'
 
@@ -10,7 +9,8 @@ export function SignIn() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   // hook de context
-  const { data, setData } = useSign()
+  // eslint-disable-next-line no-unused-vars
+  const [data, setData] = useState()
   // navegação
   const navigate = useNavigate()
   // eslint-disable-next-line react-hooks/exhaustive-deps

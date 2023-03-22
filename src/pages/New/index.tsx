@@ -10,7 +10,7 @@ import { Card } from '../../components/Card'
 export function New() {
   const [title, setTitle] = useState('')
   const [linkUrl, setLinkUrl] = useState('')
-  const [avatarURL, setAvatarURL] = useState()
+  const [avatarURL, setAvatarURL] = useState<any>()
   const [price, setPrice] = useState<any>(0)
   const navigate = useNavigate()
 

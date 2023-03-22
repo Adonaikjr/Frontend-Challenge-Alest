@@ -5,7 +5,7 @@ import { api } from '../service/api'
 export const ContextProvider = createContext({})
 
 export function Context({ children }: any) {
-  const [data, setData] = useState<any>(null)
+  const [data, setData] = useState<any>()
   const navigate = useNavigate()
 
   // deixando o usuario sempre logado caso exista um usuario com token
