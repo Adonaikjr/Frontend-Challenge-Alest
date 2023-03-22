@@ -16,7 +16,7 @@ interface typePropsData {
 export function Details() {
   const { id } = useParams()
   const [data, setData] = useState<typePropsData[]>([])
-  const baseUrl = 'http://localhost:3333'
+  const baseUrl = 'https://challenge-alest.onrender.com'
   const [title, setTitle] = useState('')
   const [linkUrl, setLinkUrl] = useState('')
   const [avatarURL, setAvatarURL] = useState<any>()
